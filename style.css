@@ -8,11 +8,13 @@ body {
 .container {
     background: white;
     padding: 30px;
-    width: 300px;
+    max-width: 900px;
+    width: 90%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
 
 input {
     padding: 8px;
@@ -23,4 +25,37 @@ button {
     padding: 8px 12px;
     margin-top: 10px;
     cursor: pointer;
+}
+/* Forecast Section */
+#forecastContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Forecast Cards */
+.forecast-card {
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-card img {
+    width: 60px;
+}
+
+.forecast-card h4 {
+    margin-bottom: 8px;
+}
+
+.forecast-card p {
+    margin: 5px 0;
 }
