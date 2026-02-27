@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>SkyFetch Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,8 +11,14 @@
         <h1>SkyFetch</h1>
 
         <input type="text" id="cityInput" placeholder="Enter city name">
-        <br>
         <button id="searchBtn">Get Weather</button>
+
+        <!-- Recent Searches -->
+        <div id="recentSearches">
+            <h3>Recent Searches</h3>
+            <div id="recentList"></div>
+            <button id="clearHistory">Clear History</button>
+        </div>
 
         <div id="weatherResult"></div>
     </div>

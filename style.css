@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #4facfe, #00f2fe);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .container {
@@ -15,7 +15,6 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-
 input {
     padding: 8px;
     width: 70%;
@@ -25,7 +24,27 @@ button {
     padding: 8px 12px;
     margin-top: 10px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #4facfe;
+    color: white;
 }
+
+/* Recent Searches */
+#recentSearches {
+    margin-top: 20px;
+}
+
+#recentList button {
+    margin: 5px;
+    background: #2196f3;
+}
+
+#clearHistory {
+    margin-top: 10px;
+    background: red;
+}
+
 /* Forecast Section */
 #forecastContainer {
     display: grid;
@@ -34,28 +53,14 @@ button {
     margin-top: 15px;
 }
 
-/* Forecast Cards */
 .forecast-card {
     background: #f0f8ff;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.forecast-card:hover {
-    transform: translateY(-5px);
 }
 
 .forecast-card img {
     width: 60px;
-}
-
-.forecast-card h4 {
-    margin-bottom: 8px;
-}
-
-.forecast-card p {
-    margin: 5px 0;
 }
